@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Welcome to Foundation</title>
+  
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/foundation.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+	<link rel="stylesheet" href="stylesheets/main.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+	
+	<script src="javascripts/modernizr.foundation.js"></script>
+	
+	<!-- googloe fonts -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'> -->
+	
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!-- container -->
+	<div class=container>
+			<div class=row>
+
+				<div class="i1 image-wrap">
+					
+					<div class=sign1>
+						<h2>Big high quality pictures</h2>
+						<h3>Seems that are loading very fast and smooth</h3>
+						<h4>If you use this trick</h4>
+					</div>
+					
+					<div class="n1 image">
+						&nbsp;
+					</div>
+					
+				</div>
+				<div class="i2 image-wrap">
+
+					<div class=sign1>
+						<h3>This might be a nice solution to make a site nicer</h3>
+						<h4>Small scatches load first, then one by one, big pictures load</h4>
+					</div>
+
+					<div class="n2 image">
+						&nbsp;
+					</div>
+				</div>
+				<div class="i3 image-wrap">
+					<div class="n3 image">
+						&nbsp;
+					</div>
+				</div>
+				<div class="i4 image-wrap">
+					<div class="n4 image">
+						&nbsp;
+					</div>
+				</div>
+				<div class="i5 image-wrap">
+					<div class="n5 image">
+						&nbsp;
+					</div>
+				</div>
+				<div class="i6 image-wrap">
+					<div class="n6 image">
+						&nbsp;
+					</div>
+				</div>
+				<div class="i7 image-wrap">
+					<div class="n7 image">
+						&nbsp;
+					</div>
+				</div>
+				
+			</div>
+	</div>
+		
+		
+	<!-- container -->
+
+
+
+
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/app.js"></script>
+
+	
+	<script type="text/javascript">
+     
+	 
+	 
+	 $(window).load(function() {
+		
+		for (i=1; i<=7; i++) {
+		
+		var n = setTimeout("$('.n"+i+"').css('background','url(images/pic"+i+".jpg)'); $('.n"+i+"').fadeIn(5000); ", (i-1) * 1000);
+		
+		}
+
+     });
+</script>
+
+</body>
+</html>
